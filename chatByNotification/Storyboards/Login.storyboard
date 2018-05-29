@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xEK-2p-Sv8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="32Z-xy-v4I">
+            <objects>
+                <viewController id="xEK-2p-Sv8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UwO-Op-YPi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friends" translatesAutoresizingMaskIntoConstraints="NO" id="tpA-8K-eQZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPw-pH-kcS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WX4-cH-nI9">
+                                        <rect key="frame" x="12" y="85" width="351" height="121"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoMyChat" translatesAutoresizingMaskIntoConstraints="NO" id="L2Y-WP-waT">
+                                                <rect key="frame" x="0.0" y="0.0" width="131" height="121"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="131" id="5tM-iH-vmm"/>
+                                                    <constraint firstAttribute="height" constant="121" id="t57-yd-Qfm"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXb-35-3yV">
+                                                <rect key="frame" x="141" y="0.0" width="210" height="121"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="48"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="96w-78-1a6">
+                                        <rect key="frame" x="111" y="282" width="153" height="83"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lL6-Jd-FDG">
+                                                <rect key="frame" x="0.0" y="0.0" width="153" height="34"/>
+                                                <state key="normal" title="Login with account"/>
+                                                <connections>
+                                                    <segue destination="sep-Mr-Ynb" kind="show" id="8Sb-7w-KgO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5R-6d-pmI">
+                                                <rect key="frame" x="0.0" y="49" width="153" height="34"/>
+                                                <state key="normal" title="Register"/>
+                                                <connections>
+                                                    <segue destination="KrL-1L-QVk" kind="show" id="MFC-aU-ULE"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95298332253886009" green="0.46840356074879147" blue="0.13955874529521053" alpha="0.72081316021126762" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="96w-78-1a6" firstAttribute="centerX" secondItem="fPw-pH-kcS" secondAttribute="centerX" id="25e-cg-KTr"/>
+                                    <constraint firstItem="WX4-cH-nI9" firstAttribute="top" secondItem="fPw-pH-kcS" secondAttribute="top" constant="85" id="2Lp-Ne-uAP"/>
+                                    <constraint firstAttribute="trailing" secondItem="WX4-cH-nI9" secondAttribute="trailing" constant="12" id="Ojb-cr-mdj"/>
+                                    <constraint firstItem="96w-78-1a6" firstAttribute="centerY" secondItem="fPw-pH-kcS" secondAttribute="centerY" id="nvm-y1-tJC"/>
+                                    <constraint firstItem="WX4-cH-nI9" firstAttribute="leading" secondItem="fPw-pH-kcS" secondAttribute="leading" constant="12" id="ynA-h6-D57"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6b8-2f-1h5" firstAttribute="bottom" secondItem="fPw-pH-kcS" secondAttribute="bottom" id="22U-iZ-jd0"/>
+                            <constraint firstItem="tpA-8K-eQZ" firstAttribute="top" secondItem="6b8-2f-1h5" secondAttribute="top" id="32G-TU-sZL"/>
+                            <constraint firstItem="tpA-8K-eQZ" firstAttribute="leading" secondItem="6b8-2f-1h5" secondAttribute="leading" id="85S-Bb-Wq4"/>
+                            <constraint firstItem="fPw-pH-kcS" firstAttribute="top" secondItem="6b8-2f-1h5" secondAttribute="top" id="Igc-cg-en2"/>
+                            <constraint firstItem="6b8-2f-1h5" firstAttribute="bottom" secondItem="tpA-8K-eQZ" secondAttribute="bottom" id="Rhy-TD-47V"/>
+                            <constraint firstItem="fPw-pH-kcS" firstAttribute="leading" secondItem="6b8-2f-1h5" secondAttribute="leading" id="ae1-qE-eCw"/>
+                            <constraint firstItem="6b8-2f-1h5" firstAttribute="trailing" secondItem="tpA-8K-eQZ" secondAttribute="trailing" id="cgw-wv-xdb"/>
+                            <constraint firstItem="6b8-2f-1h5" firstAttribute="trailing" secondItem="fPw-pH-kcS" secondAttribute="trailing" id="pBB-kO-hjq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6b8-2f-1h5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WvE-cI-nmE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.59999999999999" y="101.19940029985008"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LdJ-Ay-Z1f">
+            <objects>
+                <viewController id="sep-Mr-Ynb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fmm-hY-GoP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HoN-9Z-Ngt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="67f-Yt-lhC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878" y="-172"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="gJc-J7-5vf">
+            <objects>
+                <viewController id="KrL-1L-QVk" customClass="RegisterViewController" customModule="chatByNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SQk-Kc-FfT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="akC-7h-C6f"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YWw-rK-5nI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878" y="526"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="friends" width="350" height="245"/>
+        <image name="logoMyChat" width="256" height="256"/>
+    </resources>
+</document>
